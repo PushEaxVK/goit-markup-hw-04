@@ -187,6 +187,9 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 
   padding-top: 188px;
   padding-bottom: 188px;
