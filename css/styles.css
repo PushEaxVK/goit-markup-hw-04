@@ -294,15 +294,14 @@ img {
 }
 
 .features-icon-box {
-  padding: 24px 100px;
   background-color: #f4f4fd;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   margin-bottom: 8px;
-}
-
-.features-icon {
-  fill: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
 }
 
 /* --- Section Our Team --- */
@@ -361,7 +360,7 @@ img {
 }
 
 .social-icon {
-  fill: none;
+  fill: #f4f4fd;
 }
 
 /* --- Section Portfolio --- */
@@ -375,6 +374,10 @@ img {
 
 .portfolio-list-item {
   flex-basis: calc((100% - 2 * 24px) / 3);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .portfolio-card-content {
@@ -443,7 +446,10 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
+}
+
+.footer-logo-box {
+  margin-right: 120px;
 }
 
 .footer-soc-text {
@@ -452,13 +458,13 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 
 .footer-soc-list {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-top: 16px;
 }
 
 .social-link.footer-social-link:hover,
